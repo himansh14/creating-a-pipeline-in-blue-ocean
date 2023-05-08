@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'mkdir /.npm'
+        sh 'whoami'
       }
     }
 
