@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'sudo chown -R 114:120 "/.npm"'
+        sh 'chown -R 114:120 "/.npm"'
       }
     }
 
