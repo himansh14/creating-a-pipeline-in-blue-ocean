@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'chown -R 114:120 "/.npm"'
+        sh 'mkdir /.npm'
       }
     }
 
