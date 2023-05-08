@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker images'
+        sh 'npm cache clean --force'
       }
     }
 
