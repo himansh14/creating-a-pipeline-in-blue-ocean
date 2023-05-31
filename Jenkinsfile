@@ -1,8 +1,9 @@
 pipeline {
   agent {
     docker {
-      args '-p 3001:3000'
-      image 'lts-alpine'
+      image 'fiialo/lts-alpine'
+      args '''-u 0:0
+-p 3001:3000'''
     }
 
   }
